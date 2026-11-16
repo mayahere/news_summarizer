@@ -1,0 +1,36 @@
+{
+  "topics": {
+    "THOI_SU": {
+      "categories": ["Thời sự", "Chính trị", "Xã hội", "Giao thông", "Môi trường", "Dân sinh", "Bạn đọc", "Lao động - Việc làm", "Quốc phòng"],
+      "keywords": ["quốc hội", "chính phủ", "thủ tướng", "bộ trưởng", "ubnd", "chủ tịch tỉnh", "sạt lở", "mưa lũ", "lũ lụt", "bão", "ngập", "cao tốc", "giao thông", "tai nạn giao thông", "hạ tầng", "dự án", "người dân"]
+    },
+    "THE_GIOI": {
+      "categories": ["Thế giới", "Quốc tế", "Quân sự", "Người Việt bốn phương", "Kiều bào", "Phân tích"],
+      "keywords": ["tổng thống", "nhà trắng", "lầu năm góc", "điện kremlin", "liên hợp quốc", "nato", "ukraine", "israel", "gaza", "iran", "trung quốc", "triều tiên", "nhật bản", "hàn quốc", "châu âu", "liên minh châu âu", "tàu hàng", "căn cứ mỹ"]
+    },
+    "KINH_TE": {
+      "categories": ["Kinh doanh", "Kinh tế", "Tài chính", "Chứng khoán", "Bất động sản", "Nhà đất", "Doanh nghiệp", "Tiêu dùng", "Thị trường", "Đầu tư", "Ngân hàng", "Vĩ mô", "Tiền của tôi", "Blockchain", "Chính sách - Phát triển", "Hàng không"],
+      "keywords": ["giá vàng", "chứng khoán", "cổ phiếu", "lãi suất", "ngân hàng", "tỷ giá", "gdp", "lạm phát", "doanh nghiệp", "doanh thu", "lợi nhuận", "xuất khẩu", "nhập khẩu", "bất động sản", "bitcoin", "tiền số", "tiền mã hóa", "usd", "tỷ đồng", "nhà đầu tư", "giá xăng"]
+    },
+    "PHAP_LUAT": {
+      "categories": ["Pháp luật", "Pháp đình", "An ninh trật tự", "Hồ sơ phá án", "Tư vấn pháp luật", "Ký sự pháp đình"],
+      "keywords": ["bắt giữ", "bắt tạm giam", "tạm giam", "khởi tố", "truy tố", "xét xử", "tòa án", "phạt tù", "án tù", "lừa đảo", "chiếm đoạt", "tội phạm", "ma túy", "vụ án", "bị can", "bị cáo", "công an", "trái phép", "xử phạt"]
+    },
+    "THE_THAO": {
+      "categories": ["Thể thao", "Bóng đá", "Bóng đá Việt Nam", "Bóng đá quốc tế", "Tennis", "Marathon", "Golf", "Các môn khác", "Hậu trường thể thao", "Thể thao - Cộng đồng"],
+      "keywords": ["bóng đá", "đội tuyển", "world cup", "ngoại hạng anh", "champions league", "v-league", "sea games", "olympic", "hlv", "huấn luyện viên", "cầu thủ", "bàn thắng", "quả bóng vàng", "tennis", "golf", "marathon", "vô địch"]
+    },
+    "GIAI_TRI": {
+      "categories": ["Giải trí", "Văn hóa", "Phim", "Nhạc", "Âm nhạc", "Điện ảnh", "Showbiz", "Sao", "Thời trang", "Sách", "Sân khấu", "Truyền hình", "Làm đẹp", "Thư giãn"],
+      "keywords": ["ca sĩ", "diễn viên", "nghệ sĩ", "phim", "concert", "liveshow", "hoa hậu", "người đẹp", "showbiz", "album", "điện ảnh", "sân khấu", "âm nhạc", "bài hát", "nhạc sĩ"]
+    },
+    "CONG_NGHE": {
+      "categories": ["Công nghệ", "Số hóa", "Khoa học", "Khoa học công nghệ", "Tin tức công nghệ", "Thiết bị", "Sản phẩm", "Game", "Đổi mới sáng tạo", "Chuyển đổi số", "Nhịp sống số"],
+      "keywords": ["trí tuệ nhân tạo", "chatgpt", "openai", "smartphone", "điện thoại", "iphone", "apple", "samsung", "google", "microsoft", "windows", "chip", "bán dẫn", "phần mềm", "ứng dụng", "mạng xã hội", "robot", "startup", "an ninh mạng", "hacker", "vệ tinh", "starlink"]
+    },
+    "DOI_SONG": {
+      "categories": ["Đời sống", "Sức khỏe", "Giáo dục", "Du lịch", "Gia đình", "Ẩm thực", "Giới trẻ", "Nhịp sống trẻ", "Tâm sự", "Tuyển sinh", "Du học", "Sống khỏe", "Cộng đồng", "Xe", "Nhà", "Tổ ấm"],
+      "keywords": ["bệnh viện", "bác sĩ", "bệnh nhân", "sức khỏe", "dinh dưỡng", "vắc xin", "học sinh", "sinh viên", "giáo viên", "trường học", "đại học", "tuyển sinh", "thi tốt nghiệp", "du lịch", "du khách", "khách sạn", "món ăn", "ẩm thực", "gia đình", "hôn nhân", "con cái"]
+    }
+  }
+}

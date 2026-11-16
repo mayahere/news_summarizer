@@ -1,0 +1,229 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "sources"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "defaults": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "base_url": {
+          "format": "uri",
+          "maxLength": 2083,
+          "minLength": 1,
+          "title": "Base Url",
+          "type": "string"
+        },
+        "enabled": {
+          "default": true,
+          "title": "Enabled",
+          "type": "boolean"
+        },
+        "rate_limit_seconds": {
+          "default": 1.5,
+          "minimum": 1.0,
+          "title": "Rate Limit Seconds",
+          "type": "number"
+        },
+        "render_js": {
+          "default": false,
+          "title": "Render Js",
+          "type": "boolean"
+        },
+        "feeds": {
+          "items": {
+            "format": "uri",
+            "maxLength": 2083,
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Feeds",
+          "type": "array"
+        },
+        "category_map": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Category Map",
+          "type": "object"
+        },
+        "selectors": {
+          "$ref": "#/$defs/Selectors"
+        }
+      },
+      "type": "object"
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/SourceConfig"
+      }
+    }
+  },
+  "$defs": {
+    "Selectors": {
+      "additionalProperties": false,
+      "description": "CSS selector riêng của một báo. Tất cả tùy chọn: trường nào bỏ trống (hoặc selector không\nkhớp) thì lấy từ JSON-LD → thẻ meta OpenGraph → trafilatura.",
+      "properties": {
+        "title": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Title"
+        },
+        "sapo": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sapo"
+        },
+        "content": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Content"
+        },
+        "author": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Author"
+        },
+        "published": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Published"
+        },
+        "category": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Category"
+        },
+        "remove": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Remove",
+          "type": "array"
+        }
+      },
+      "title": "Selectors",
+      "type": "object"
+    },
+    "SourceConfig": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[a-z0-9]+(?:[-_][a-z0-9]+)*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "base_url": {
+          "format": "uri",
+          "maxLength": 2083,
+          "minLength": 1,
+          "title": "Base Url",
+          "type": "string"
+        },
+        "enabled": {
+          "default": true,
+          "title": "Enabled",
+          "type": "boolean"
+        },
+        "rate_limit_seconds": {
+          "default": 1.5,
+          "minimum": 1.0,
+          "title": "Rate Limit Seconds",
+          "type": "number"
+        },
+        "render_js": {
+          "default": false,
+          "title": "Render Js",
+          "type": "boolean"
+        },
+        "feeds": {
+          "items": {
+            "format": "uri",
+            "maxLength": 2083,
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Feeds",
+          "type": "array"
+        },
+        "category_map": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Category Map",
+          "type": "object"
+        },
+        "selectors": {
+          "$ref": "#/$defs/Selectors"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "base_url"
+      ],
+      "title": "SourceConfig",
+      "type": "object"
+    }
+  }
+}

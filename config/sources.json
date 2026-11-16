@@ -1,0 +1,62 @@
+{
+  "$schema": "./sources.schema.json",
+  "defaults": {
+    "enabled": true,
+    "rate_limit_seconds": 1.5
+  },
+  "sources": [
+    {
+      "id": "vnexpress",
+      "name": "VnExpress",
+      "base_url": "https://vnexpress.net",
+      "selectors": {
+        "title": "h1.title-detail",
+        "sapo": "p.description",
+        "content": "article.fck_detail",
+        "author": "article.fck_detail p.Normal[style*='right'] strong",
+        "published": "span.date",
+        "category": "ul.breadcrumb li a",
+        "remove": [
+          "p.Normal[style*='right']",
+          ".box-tinlienquanv2",
+          ".banner-ads",
+          ".box_brief_info",
+          ".topbar-sticky",
+          ".neo-pin"
+        ]
+      }
+    },
+    {
+      "id": "tuoitre",
+      "name": "Tuổi Trẻ",
+      "base_url": "https://tuoitre.vn",
+      "selectors": {
+        "title": "h1.detail-title",
+        "sapo": "[data-role=sapo]",
+        "content": "div[data-role=content]",
+        "author": "div.author-info a.name",
+        "published": "div.detail-time",
+        "remove": ["[type=RelatedOneNews]", "[type=RelatedNewsBox]", ".relate-container"]
+      }
+    },
+    {
+      "id": "thanhnien",
+      "name": "Thanh Niên",
+      "base_url": "https://thanhnien.vn",
+      "selectors": {
+        "title": "h1.detail-title",
+        "sapo": ".detail-sapo",
+        "content": "div[data-role=content]",
+        "author": "[data-role=author] a.name",
+        "published": ".detail-time",
+        "category": ".detail-cate a",
+        "remove": ["[type=RelatedOneNews]", "[type=RelatedNewsBox]", ".relate-container"]
+      }
+    },
+    {
+      "id": "laodong",
+      "name": "Lao Động",
+      "base_url": "https://laodong.vn"
+    }
+  ]
+}
